@@ -535,7 +535,7 @@ document.addEventListener('mousemove',e=>{cx=e.clientX;cy=e.clientY;CUR.style.le
 })();
 
 // ── LOCK ──
-const PWD='1006';let pin='';
+const PWD='1003';let pin='';
 const pdots=[0,1,2,3].map(i=>document.getElementById('d'+i));
 const perr=document.getElementById('PERR');
 function updDots(){pdots.forEach((d,i)=>{d.classList.toggle('on',i<pin.length);d.classList.remove('err');});}
