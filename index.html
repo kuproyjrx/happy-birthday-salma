@@ -130,8 +130,8 @@ canvas.bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .flip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;width:100%;max-width:380px;opacity:0;transition:opacity 1s .9s}
 .scene.active .flip-grid{opacity:1}
 .fcard{perspective:700px;cursor:pointer;height:clamp(85px,18vw,115px)}
-.finner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.4,2,.55,.95);transform:rotateY(180deg)}
-.fcard.open .finner{transform:rotateY(-0)}
+.finner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.22,1,.36,.1);transform:rotateY(0deg)}
+.fcard.open .finner{transform:rotateY(180)}
 .ffront,.fback{position:absolute;inset:0;backface-visibility:hidden;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.3rem}
 .ffront{background:rgba(232,83,122,.1);border:1px solid rgba(232,83,122,.25)}
 .ffront-ico{font-size:clamp(1.5rem,5vw,2rem)}
