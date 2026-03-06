@@ -510,7 +510,9 @@ canvas.bg{position:fixed;inset:0;z-index:0;pointer-events:none}
   <button class="pill-btn" id="PILL_PP">⏸</button>
   <button class="pill-btn" id="PILL_X">✕</button>
 </div>
-<audio id="BS_AUD" loop></audio>
+<audio id="BS_AUD" loop>
+  <source src="lagu 1.mp3" type="audio/mpeg">
+</audio>
 
 <script>
 'use strict';
@@ -540,8 +542,18 @@ function updDots(){pdots.forEach((d,i)=>{d.classList.toggle('on',i<pin.length);d
 function shakeErr(){pdots.forEach(d=>d.classList.add('err'));perr.classList.add('on');setTimeout(()=>{pdots.forEach(d=>d.classList.remove('err'));perr.classList.remove('on');},1200);pin='';updDots();}
 function tryUnlock(){
   if(pin===PWD){
-    const lk=document.getElementById('LOCK');lk.classList.add('out');
-    setTimeout(()=>{lk.style.display='none';startStory();},1200);
+
+    const music = document.getElementById("BS_AUD");
+    music.play();
+
+    const lk=document.getElementById('LOCK');
+    lk.classList.add('out');
+
+    setTimeout(()=>{
+      lk.style.display='none';
+      startStory();
+    },1200);
+
   }else shakeErr();
 }
 document.querySelectorAll('.nk[data-n]').forEach(b=>b.addEventListener('click',()=>{if(pin.length>=4)return;pin+=b.dataset.n;updDots();if(pin.length===4)setTimeout(tryUnlock,160);}));
