@@ -131,7 +131,7 @@ canvas.bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 .scene.active .flip-grid{opacity:1}
 .fcard{perspective:700px;cursor:pointer;height:clamp(85px,18vw,115px)}
 .finner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.4,2,.55,.95);transform:rotateY(180deg)}
-.fcard.open .finner{transform:rotateY(0)}
+.fcard.open .finner{transform:rotateY(-0)}
 .ffront,.fback{position:absolute;inset:0;backface-visibility:hidden;border-radius:2px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:.3rem}
 .ffront{background:rgba(232,83,122,.1);border:1px solid rgba(232,83,122,.25)}
 .ffront-ico{font-size:clamp(1.5rem,5vw,2rem)}
@@ -366,13 +366,13 @@ canvas.bg{position:fixed;inset:0;z-index:0;pointer-events:none}
 
   <!-- SCENE 4: FLIP CARDS -->
   <div class="scene" id="sc4">
-    <p class="scene-label">Chapter IV &nbsp;·&nbsp; Gifts</p>
+    <p class="scene-label">Chapter IV &nbsp;·&nbsp; Wish</p>
     <p class="flip-intro">Buka satu per satu...</p>
     <div class="flip-grid" id="FGRID">
       <div class="fcard" data-em="🌸" data-txt="Kamu cantik luar biasa ✨"><div class="finner"><div class="fback"><div class="fback-em">🌸</div><div class="fback-txt">Kamu cantik luar biasa ✨</div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
       <div class="fcard" data-em="💫" data-txt="Senyummu menerangi hari 💫"><div class="finner"><div class="fback"><div class="fback-em">💫</div><div class="fback-txt">Senyummu menerangi hari 💫</div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
-      <div class="fcard" data-em="🌍" data-txt="Kamu membuat dunia lebih baik 🌍"><div class="finner"><div class="fback"><div class="fback-em">🌍</div><div class="fback-txt">Kamu membuat dunia lebih baik 🌍</div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
-      <div class="fcard" data-em="💖" data-txt="Hatimu yang baik itu langka 💖"><div class="finner"><div class="fback"><div class="fback-em">💖</div><div class="fback-txt">Hatimu yang baik itu langka 💖</div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
+      <div class="fcard" data-em="🌍" data-txt="Kamu jadi orang sukses "><div class="finner"><div class="fback"><div class="fback-em"></div><div class="fback-txt">Kamu jadi orang sukses </div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
+      <div class="fcard" data-em="💖" data-txt="Kamu masuk surga 💖"><div class="finner"><div class="fback"><div class="fback-em">💖</div><div class="fback-txt">Kamu masuk surga 💖</div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
       <div class="fcard" data-em="🌟" data-txt="Semua impianmu akan terwujud 🌟"><div class="finner"><div class="fback"><div class="fback-em">🌟</div><div class="fback-txt">Semua impianmu akan terwujud 🌟</div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
       <div class="fcard" data-em="💕" data-txt="Happy Birthday! Aku sayang kamu 💕"><div class="finner"><div class="fback"><div class="fback-em">💕</div><div class="fback-txt">Happy Birthday! Aku sayang kamu 💕</div></div><div class="ffront"><div class="ffront-ico">◆</div><div class="ffront-lbl">Open</div></div></div></div>
     </div>
